@@ -1,0 +1,687 @@
+﻿		/*───────────────────────────────────Order───────────────────────────────────!!*/
+		/*
+
+		top > bottom > left > right
+
+		float > border
+
+		width > height
+
+		margin > padding
+
+		text > font
+
+		color > line
+
+		*/
+		/*───────────────────────────────────All of───────────────────────────────────!*/
+		*
+		{
+			box-sizing: border-box;
+			font: normal 10pt 'Jua', sans-serif;
+			color: #747474;
+		}
+		body
+		{
+			margin: 0px;
+			background-color: #F2F4F7;
+		}
+		/*────────────────────────────────Common Class────────────────────────────────!*/
+		.header,
+		.leftMain1, .leftMain2, .leftMain3, .ranking, .music,
+		.rightMain1, .rightMain2, .rightMain3, .rightMain4,
+		.sideTop, .sideTime, .sideGoogle, .linkGoogle, .linkYoutube, .linkNaver, .sideBot,
+		.title, .board,
+		.footer
+		{
+			background-color: #FFFFFF;
+		}
+		.header,
+		.leftMain1, .leftMain2, .leftMain3,
+		.rightMain1, .rightMain2, .rightMain3,
+		.sideTop, .sideTime, .sideGoogle, .linkGoogle, .linkYoutube, .linkNaver,
+		.title
+		{
+			margin-bottom: 8px;
+		}
+		.leftMain1, .leftMain2, .leftMain3, .ranking, .music,
+		.rightMain1, .rightMain2, .rightMain3, .rightMain4,
+		.sideTop, .sideTime, .sideGoogle, .linkGoogle, .linkYoutube, .linkNaver, .sideBot,
+		.title, .board
+		{
+			border: 1px solid #DEE3EB;
+		}
+		/*───────────────────────────────────Header───────────────────────────────────!*/
+		.header
+		{
+			height: 220px;
+		}
+		.topMenu
+		{
+			width: 1024px;
+			height: 50px;
+			margin: 0px auto;
+			margin-bottom: 10px;
+			padding-top: 10px;
+		}
+		.topMenu div
+		{
+			float: left;
+			width: 80px;
+			text-align: center;
+		}
+		.topMenu .topMenuGap
+		{
+			float: left;
+			width: 704px;
+		}
+		.topMenu a
+		{
+			text-decoration: none;
+		}
+		.topMenu a:hover
+		{
+			color: #47C83E;
+		}
+		.topMenu p
+		{
+			margin-top: 0px;
+		}
+		.topMain
+		{
+			width: 1024px;
+			height: 100px;
+			margin: 0px auto;
+			margin-bottom: 10px;
+		}
+		.logo
+		{
+			float: left;
+			width: 674px;
+			padding-top: 15px;
+			padding-left: 20px;
+		}
+		.logo a
+		{
+			text-decoration: none;
+			text-shadow: #DEE3EB 5px 5px 5px;
+			font: bolder 25pt 'Nova Square', cursive;
+		}
+		.logo a:hover
+		{
+			color: #47C83E;
+		}
+		.search
+		{
+			float: right;
+			border: 5px solid #DEE3EB;
+			width: 330px;
+			height: 40px;
+			margin-top: 54px;
+			margin-right: 20px;
+		}
+		.inputSearch
+		{
+			float: left;
+			border: none;
+			width: 270px;
+			height: 30px;
+			padding-left: 5px;
+			font: normal 12pt 'Jua', sans-serif;
+		}
+		.clickSearch
+		{
+			float: right;
+			border: none;
+			width: 50px;
+			height: 30px;
+			font: normal 12pt 'Jua', sans-serif;
+			background-color: #DEE3EB;
+		}
+		.botMenu
+		{
+			clear: left;
+			border-top: 1px solid #F1F3F6;
+			border-bottom: 1px solid #DEE3EB;
+			height: 50px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.botMenuListAll
+		{
+			list-style: none;
+			width: 1024px;
+			height: 100%;
+			margin: 0px auto;
+			padding-top: 7px;
+			padding-left: 0px;
+		}
+		.botMenuList, .botMenuListEnd
+		{
+			float: left;
+			width: 15%;
+			height: 100%;
+			text-align: center
+		}
+		.botMenuList
+		{
+			margin-right: 2%;
+		}
+		.botMenuList a, .botMenuListEnd a
+		{
+			text-decoration: none;
+			font: normal 12pt 'Jua', sans-serif;
+		}
+		.botMenuList a:hover, .botMenuListEnd a:hover
+		{
+			color: #47C83E;
+		}
+		.botMenuList ul, .botMenuListEnd ul
+		{
+			display: none;
+			position: absolute;
+			border: 1px solid #DEE3EB;
+			width: 151.3px;
+			height: auto;
+			margin: 0px;
+			padding: 0px;
+			background-color: #FFFFFF;
+		}
+		.botMenuList:hover ul, .botMenuListEnd:hover ul
+		{
+			list-style: none;
+			display: block;
+		}
+		.botMenuList li, .botMenuListEnd li
+		{
+			height: 25px;
+			margin: 5px;
+			text-align: left;
+		}
+		.botMenuList li:hover, .botMenuListEnd li:hover
+		{
+			background-color: #F2F4F7;
+		}
+		.botMenuList li a, .botMenuListEnd li a
+		{
+			font: bolder 10pt 'Jua', sans-serif;
+		}
+		.botMenuList li a:hover, .botMenuListEnd li a:hover
+		{
+			color: #47C83E;
+		}
+		/*─────────────────────────────────Home Main─────────────────────────────────!!*/
+		.main
+		{
+			width: 1024px;
+			height: 1030px;	
+			margin: 0px auto;
+			margin-bottom: 8px;
+		}
+		.main header
+		{
+			border-bottom: 1px solid #DEE3EB;
+			height: 41px;
+			padding-left: 10px;
+			font: normal 12pt 'Jua', sans-serif;
+			line-height: 40px;
+		}
+		.list, .listEnd
+		{
+			height: 30px;
+			line-height: 30px;
+		}
+		.leftMain .list, .leftMain .listEnd, .rightMain .list, .leftMain .listEnd
+		{
+			padding-left: 10px;
+		}
+		.list
+		{
+			border-bottom: 1px solid #DEE3EB;
+		}
+		/*─────────────────────────────────Left Main─────────────────────────────────!!*/
+		.leftMain
+		{
+			float: left;
+			width: 626px;
+		}
+		.leftMain1
+		{
+			height: 100px;
+		}
+		.leftMain2
+		{
+			height: 312px;
+		}
+		.aviList1, .aviList2, .aviList3, .aviList4
+		{
+			float: left;
+			width: 204px;
+			height: 131.5px;
+		}
+		.aviList1
+		{
+			margin-right: 6px;
+			margin-bottom: 6px;
+		}
+		.aviList2
+		{
+			margin-bottom: 6px;
+		}
+		.aviList3
+		{
+			margin-right: 6px;
+		}
+		.leftMain3
+		{
+			height: 312px;
+		}
+		.leftMain4
+		{
+			height: 282px;
+		}
+		.ranking
+		{
+			float: left;
+			width: 200px;
+			height: 100%;
+		}
+		.music
+		{
+			float: right;
+			width: 418px;
+			height: 100%;
+		}
+		.music div
+		{
+			width: 100%;
+			height: 239px;
+		}
+		/*─────────────────────────────────Right Main─────────────────────────────────!*/
+		.rightMain
+		{
+			float: right;
+			width: 390px;
+		}
+		.rightMain1
+		{
+			height: 160px;
+		}
+		.profile
+		{
+			float: left;
+			border-right: 1px solid #DEE3EB;
+			width: 90px;
+			height: 100px;
+			margin-right: 39px;
+			text-align: center;
+			font: bolder 15pt 'Nova Square', cursive;
+			line-height: 100px;
+		}
+		.login
+		{
+			width: 100%;
+			height: 100px;
+			padding-top: 24px;
+			padding-bottom: 24px;
+			padding-right: 39px;
+		}
+		.inputId, .inputPs
+		{
+			width: 150px;
+			height: 25px;
+			padding-left: 5px;
+		}
+		.clickLogin
+		{
+			float: right;
+			width: 70px;
+			height: 50px;
+		}
+		.jnf
+		{
+			border-top: 1px solid #DEE3EB;
+			text-align: center;
+			line-height: 60px;
+		}
+		.join
+		{
+			border-right: 1px solid #DEE3EB;
+			padding-right: 10px;
+			text-decoration: none;
+		}
+		.forget
+		{
+			padding-left: 10px;
+			text-decoration: none;
+		}
+		.join:hover, .forget:hover
+		{
+			color: #47C83E;
+		}
+		.rightMain2
+		{
+			height: 282px;
+		}
+		.miniMenu
+		{
+			border-bottom: 1px solid #DEE3EB;
+			width: 390px;
+			height: 42px;
+			text-align: center;
+		}
+		.miniMenuList, .miniMenuListEnd
+		{
+			float: left;
+			width: 25%;
+			height: 100%;
+			line-height: 40px;
+		}
+		.miniMenuList
+		{
+			border-right: 1px solid #DEE3EB;
+		}
+		.miniMenu a
+		{
+			text-decoration: none;
+			font: normal 12pt 'Jua', sans-serif;
+		}
+		.miniMenu a:hover
+		{
+			color: #47C83E;
+		}
+		.miniSection
+		{
+			width: 390px;
+			height: 240px;
+		}
+		.miniSection a, .miniSectionHide a
+		{
+			text-decoration: none;
+		}
+		.miniSectionHide
+		{
+			display: none;
+		}
+		.rightMain3
+		{
+			height: 282px;
+		}
+		.rightMain4
+		{
+			height: 282px;
+		}
+		/*─────────────────────────────────Menu Main─────────────────────────────────!!*/
+		/*────────────────────────────────────Side────────────────────────────────────!*/
+		.side
+		{
+			float: left;
+			width: 200px;
+			height: 1030px;
+		}
+		.sideTop
+		{
+			width: 100%;
+			height: 345px;
+		}
+		.sideTop a
+		{
+			text-decoration: none;
+		}
+		.sideTop a:hover
+		{
+			color: #47C83E;
+		}
+		.sideMenu
+		{
+			margin-top: 30px;
+			padding-left: 40px;
+		}
+		.sideMenu a
+		{
+			font: normal 12pt 'Jua', sans-serif;
+		}
+		.sideMenuList
+		{
+			margin-bottom: 10px;
+		}
+		.sideMenuList ul
+		{
+			padding-left: 10px;
+		}
+		.sideMenuList ul li
+		{
+			height: 15px;
+			margin: 5px;
+		}
+		.sideMenuList ul li a
+		{
+			font: bolder 10pt 'Jua', sans-serif;
+		}
+		.sideTime
+		{
+			width: 100%;
+			height: 100px;
+		}
+		.sideTime p
+		{
+			margin: 0px;
+			text-align: center;
+			font: bolder 20pt 'Jua', sans-serif;
+			line-height: 95px;
+		}
+		.sideGoogle
+		{
+			width: 100%;
+			height: 100px;
+			padding-left: 10px;
+		}
+		.sideGoogle div
+		{
+			width: 100%;
+			height: 40px;
+			text-align: center;
+			font: bolder 15pt 'Jua', sans-serif;
+			line-height: 55px;
+		}
+		.sideGoogle form
+		{
+			width: 100%
+			height: 58px;
+			padding-top: 10px;
+		}
+		.inputGoogle
+		{
+			float: left;
+			width: 140px;
+			height: 25px;
+		}
+		.clickGoogle
+		{
+			width: 40px;
+			height: 25px;
+		}
+		.linkGoogle
+		{
+			width: 100%;
+			height: 100px;
+		}
+		.linkYoutube
+		{
+			width: 100%;
+			height: 100px;
+		}
+		.linkNaver
+		{
+			width: 100%;
+			height: 100px;
+		}
+		.sideBot
+		{
+			width: 100%;
+			height: 137px;		
+		}
+		.sideBot div
+		{
+			width: 100%;
+			height: 100%;
+			text-align: center;
+		}
+		.sideBot a
+		{
+			text-decoration: none;
+			text-shadow: #DEE3EB 5px 5px 5px;
+			font: bolder 25pt 'Nova Square', cursive;
+			line-height: 130px;
+		}
+		.sideBot a:hover
+		{
+			color: #47C83E;
+		}
+		/*──────────────────────────────────Article──────────────────────────────────!!*/
+		.article
+		{
+			float: right;
+			width: 816px;
+			height: 100%;
+		}
+		.title
+		{
+			border-bottom: 1px solid #DEE3EB;
+			width: 100%;
+			height: 122px;
+		}
+		.title div
+		{
+			width: 416px;
+			height: 100%;
+			padding-left: 30px;
+			font: normal 18pt 'Jua', sans-serif;
+			color: #47C83E;
+			line-height: 117px;
+		}
+		.board
+		{
+			width: 816px;
+			height: 900px;
+		}
+		.board header
+		{
+			border-bottom: 1px solid #DEE3EB;
+			width: 100%;
+			height: 40px;
+			padding-left: 0px;
+		}
+		.letterAvi
+		{
+			width: 597.8px;
+			margin: 0px auto;
+			padding-top: 108.1px;
+		}
+		.letterAvi iframe
+		{
+			width: 100%;
+			height: 336px;
+		}
+		.boardNumber, .boardTitle, .boardWriter, .boardDate, .boardHits
+		{
+			float: left;
+			text-align: center;	
+			font: normal 12pt 'Jua', sans-serif;	
+			line-height: 35px;	
+		}
+		.letterTitle
+		{
+			float: left;	
+			padding-left: 15px;
+			font: normal 12pt 'Jua', sans-serif;	
+			line-height: 35px;	
+		}
+		.listNumber, .listTitle, .listWriter, .listDate, .listHits
+		{
+			float: left;
+			line-height: 25px;
+		}
+		.listTitle, .listWriter
+		{
+			padding-left: 5px;
+		}
+		.listTitle a
+		{
+			text-decoration: none;
+		}
+		.boardNumber, .listNumber
+		{
+			width: 60px;
+			height: 100%;
+			text-align: center;
+		}
+		.boardTitle, .listTitle
+		{
+			width: 514px;
+			height: 100%;
+		}
+		.boardWriter, .listWriter
+		{
+			width: 100px;
+			height: 100%;
+		}
+		.boardDate, .listDate
+		{
+			width: 80px;
+			height: 100%;
+			text-align: center;
+		}
+		.boardHits, .listHits
+		{
+			width: 60px;
+			height: 100%;
+			text-align: center;
+		}
+		.article footer
+		{
+			width: 100%;
+			height: 110px;
+		}
+		.page
+		{
+			height: 40px;
+			margin: 0px auto;
+			text-align: center;	
+			line-height: 40px;
+		}
+		.page a
+		{
+			margin: 5px;
+			text-decoration: none;
+			font: normal 12pt 'Jua', sans-serif;
+		}
+		.page a:hover
+		{
+			color: #47C83E;
+		}
+		/*───────────────────────────────────Footer───────────────────────────────────!*/
+		.footer
+		{
+			border-top: 1px solid #DEE3EB;
+			border-bottom: 1px solid #DEE3EB;
+			height: 220px;
+		}
+		.botMain
+		{
+			width: 1024px;
+			margin: 0px auto;
+			padding-top: 70px;
+		}
+		.creator
+		{
+			float: left;
+			width: 624px;
+			font: normal 25pt 'Jua', cursive;			
+		}
+		.information
+		{
+			float: right;
+			width: 400px;
+			font: normal 15pt 'Jua', cursive;	
+		}

@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>p4rum</title>
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!--Css&Js-->
+	<script type="text/javascript" src="include/function.js"></script>
+	<link rel="stylesheet" type="text/css" href="include/style.css">
+	<link href="include/p4rum.ico" rel="shortcut icon">
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			homeClock();
+		});
+	</script>
+	<!--Header-->
+	<header class="header">
+		<script src="include/header.js"></script>
+	</header>
+	<!--Main-->
+	<section class="main">
+		<!--Left Main-->
+		<section class="leftMain">
+			<!--Left Main 1-->
+			<section class="leftMain1">
+				<div>
+					<a href="http://hackersworld.co.kr/curriculum/sub.php?seq=14" target="blank"><img src="include/ad.png"></a>
+				</div>
+			</section>
+			<!--Left Main 2-->
+			<section class="leftMain2">
+				<header>강의실 최신글</header>
+				<div class="aviList1"><a href="menu2-4-2.html"><img src="include/avi1.png" width="100%" height="100%"></a></div>
+				<div class="aviList1"><a href="menu2-1-3.html"><img src="include/avi2.png" width="100%" height="100%"></a></div>
+				<div class="aviList2"><a href="menu2-1-2.html"><img src="include/avi3.png" width="100%" height="100%"></a></div>
+				<div class="aviList3"><a href="menu2-1-1.html"><img src="include/avi4.png" width="100%" height="100%"></a></div>
+				<div class="aviList3"><a href="menu2-4-1.html"><img src="include/avi5.png" width="100%" height="100%"></a></div>
+				<div class="aviList4"><a href="menu2-3-1.html"><img src="include/avi6.png" width="100%" height="100%"></a></div>
+			</section>
+			<!--Left Main 3-->
+			<section class="leftMain3">
+				<header>커뮤니티 최신글</header>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="listEnd"></div>
+			</section>
+			<!--Left Main 4-->
+			<section class="leftMain4">
+				<section class="ranking">
+					<header>랭킹</header>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="listEnd"></div>
+				</section>
+				<section class="music">
+					<header>금주의 RANDOM 동영상 강의</header>
+					<div>
+						<embed id="avi" width="100%" height="100%"></embed>
+					</div>
+					<script type="text/javascript">
+						$(document).ready(function()
+						{
+							var randAvi = Math.floor(Math.random() * 3);
+							var aviList = 
+							["https://www.youtube.com/embed/dh4hdtZ00EU",
+							"https://www.youtube.com/embed/ijm3pgRkpVc",
+							"https://www.youtube.com/embed/Rub-JsjMhWY"
+							];
+
+							for(i = 0; i < aviList.length; i++)
+							{
+								if(randAvi == i)
+									document.getElementById("avi").src = aviList[i];
+							}
+						});
+					</script>
+				</section>
+			</section>
+		</section>
+		<!--Right Main-->
+		<section class="rightMain">
+			<!--Right Main 1-->
+			<section class="rightMain1">
+				<div class="profile">Profile</div>
+				<form class="login">
+					<input class="inputId" type="text" placeholder="아이디">
+					<input class="clickLogin" type="button" value="로그인" onClick="unknown()">
+					<input class="inputPs" type="password" placeholder="비밀번호">
+				</form>
+				<div class="jnf">
+					<a class="join" href="javascript:onClick=unknown();">회원가입</a>
+					<a class="forget" href="javascript:onClick=unknown();">아이디 / 비밀번호 찾기</a>
+				</div>
+			</section>
+			<!--Right Main 2-->
+			<section class="rightMain2">
+				<section class="miniMenu">
+					<div class="miniMenuList"><a id="miniMenu1" href="javascript:onClick=mine('miniMenu1');">공지사항</a></div>
+					<div class="miniMenuList"><a id="miniMenu2" href="javascript:onClick=mine('miniMenu2');">내작성글</a></div>
+					<div class="miniMenuList"><a id="miniMenu3" href="javascript:onClick=mine('miniMenu3');">로그인기록</a></div>
+					<div class="miniMenuListEnd"><a id="miniMenu4" href="javascript:onClick=mine('miniMenu4');">포럼</a></div>
+				</section>
+				<section id="miniSection1" class="miniSection">
+					<div class="list"><a href="menu1-2-3.html">세번째 공지사항입니다.</a></div>
+					<div class="list"><a href="menu1-2-2.html">두번째 공지사항입니다.</a></div>
+					<div class="list"><a href="menu1-2-1.html">첫번째 공지사항입니다.</a></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="listEnd"></div>
+				</section>
+				<section id="miniSection2" class="miniSectionHide">
+					<div class="list"><a href="menu1-2-3.html">세번째 공지사항입니다.</a></div>
+					<div class="list"><a href="menu1-1-3.html">세번째 활동규칙입니다.</a></div>
+					<div class="list"><a href="menu1-2-2.html">두번째 공지사항입니다.</a></div>
+					<div class="list"><a href="menu1-1-2.html">두번째 활동규칙입니다.</a></div>
+					<div class="list"><a href="menu1-2-1.html">첫번째 공지사항입니다.</a></div>
+					<div class="list"><a href="menu1-1-1.html">첫번째 활동규칙입니다.</a></div>
+					<div class="list"></div>
+					<div class="listEnd"></div>
+				</section>
+				<section id="miniSection3" class="miniSectionHide">
+					<div class="list">6월 15일 로그아웃 내역</div>
+					<div class="list">6월 15일 로그인 내역</div>
+					<div class="list">5월 15일 로그아웃 내역</div>
+					<div class="list">5월 15일 로그인 내역</div>
+					<div class="list">4월 15일 로그아웃 내역</div>
+					<div class="list">4월 15일 로그인 내역</div>
+					<div class="list"></div>
+					<div class="listEnd"></div>
+				</section>
+				<section id="miniSection4" class="miniSectionHide">
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="list"></div>
+					<div class="listEnd"></div>
+				</section>
+			</section>
+			<!--Right Main 3-->
+			<section class="rightMain3">
+				<header>소스공유 최신글</header>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="listEnd"></div>
+			</section>
+			<!--Right Main 4-->
+			<section class="rightMain4">
+				<header>제작의뢰 최신글</header>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="list"></div>
+				<div class="listEnd"></div>
+			</section>
+		</section>
+	</section>
+	<!--Footer-->
+	<footer class="footer">
+		<script src="include/footer.js"></script>
+	</footer>	
+	<!--20141767 이민훈-->
+</body>
+</html>

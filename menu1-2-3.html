@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>p4rum</title>
+	<!--JQuery-->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<!--Css&Js-->
+	<script type="text/javascript" src="include/function.js"></script>
+	<link rel="stylesheet" type="text/css" href="include/style.css">
+	<link href="include/p4rum.ico" rel="shortcut icon">
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nova+Square" rel="stylesheet">
+</head>
+<body>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			clock();
+		});
+	</script>
+	<!--Header-->
+	<header class="header">
+		<script src="include/header.js"></script>
+	</header>
+	<!--Main-->
+	<section class="main">
+		<script src="include/side.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function()
+			{
+				var id = "sideMenu1";
+				var id2 = "sideMenu1-2"
+				var idList = ["sideMenu1", "sideMenu2", "sideMenu3", "sideMenu4", "sideMenu5", "sideMenu6"];
+				var idList2 = [
+				["sideMenu1-1", "sideMenu1-2"],
+				["sideMenu2-1", "sideMenu2-2", "sideMenu2-3", "sideMenu2-4", "sideMenu2-5"],
+				["sideMenu3-1", "sideMenu3-2", "sideMenu3-3", "sideMenu3-4", "sideMenu3-5"],
+				["sideMenu4-1", "sideMenu4-2"],
+				["sideMenu5-1", "sideMenu5-2"],
+				["sideMenu6-1", "sideMenu6-2"],
+				];
+
+				for(i = 0; i < idList.length; i++)
+				{
+					if(idList[i] == id)
+					{
+						document.getElementById(idList[i]).style.display = "block";
+						for(j =0; j < idList2[i].length; j++)
+						{
+							if(idList2[i][j] == id2)
+								document.getElementById(idList2[i][j]).style.color = "#47C83E";
+						}
+					}
+					else
+						document.getElementById(idList[i]).style.display = "none";
+				}
+			});
+		</script>
+		<section class="article">
+			<section class="title">
+				<div class>공지사항</div>
+			</section>
+			<section class="board">
+				<header>
+					<div class="letterTitle">세번째 공지사항입니다.</div>
+				</header>
+			</section>
+		</section>
+	</section>
+	<!--Footer-->
+	<footer class="footer">
+		<script src="include/footer.js"></script>
+	</footer>	
+	<!--20141767 이민훈-->
+</body>
+</html>
