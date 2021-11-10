@@ -12,7 +12,7 @@
 					<li class="sideMenuList">\
 						<a href="javascript:onClick=sideMenu(&#39sideMenu2&#39);">강의실</a>\
 						<ul id="sideMenu2">\
-							<li><a id="sideMenu2-1" href="menu2-1.html">Phython</a></li>\
+							<li><a id="sideMenu2-1" href="menu2-1.html">Python</a></li>\
 							<li><a id="sideMenu2-2" href="menu2-2.html">C/C#/C++</a></li>\
 							<li><a id="sideMenu2-3" href="menu2-3.html">Java</a></li>\
 							<li><a id="sideMenu2-4" href="menu2-4.html">HTML/JavaScript</a></li>\

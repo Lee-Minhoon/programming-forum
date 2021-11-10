@@ -40,7 +40,7 @@
 				<li class="botMenuList">\
 					<a  href="menu2-1.html">강의실</a>\
 					<ul>\
-						<li><a href="menu2-1.html">Phython</a></li>\
+						<li><a href="menu2-1.html">Python</a></li>\
 						<li><a href="menu2-2.html">C/C#/C++</a></li>\
 						<li><a href="menu2-3.html">Java</a></li>\
 						<li><a href="menu2-4.html">HTML/JavaScript</a></li>\
