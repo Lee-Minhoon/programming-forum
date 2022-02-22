@@ -4,4 +4,4 @@
 
 서버가 없이 개발된 정적 웹 페이지입니다.
 
-<img src="https://drive.google.com/file/d/1SJF-2B1kV4DU8bf6iOqBhSNXAWBtNuZ4/view?usp=sharing" />
+<img src="https://user-images.githubusercontent.com/59780565/155085811-307735e4-0bc0-43f3-9281-9a14767cbf10.gif" />
