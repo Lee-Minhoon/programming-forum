@@ -4,4 +4,4 @@
 
 서버가 없이 개발된 정적 웹 페이지입니다.
 
-<img src="https://user-images.githubusercontent.com/59780565/155085811-307735e4-0bc0-43f3-9281-9a14767cbf10.gif" />
+<a src="https://drive.google.com/file/d/1DCt0lIiR6yJxuVV6SLROj3sjHMdGSmUD/view?usp=sharing">데모영상</a>
