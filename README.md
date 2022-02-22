@@ -4,4 +4,6 @@
 
 서버가 없이 개발된 정적 웹 페이지입니다.
 
-<a src="https://drive.google.com/file/d/1DCt0lIiR6yJxuVV6SLROj3sjHMdGSmUD/view?usp=sharing">데모영상</a>
+## 데모영상
+
+https://drive.google.com/file/d/1DCt0lIiR6yJxuVV6SLROj3sjHMdGSmUD/view?usp=sharing
