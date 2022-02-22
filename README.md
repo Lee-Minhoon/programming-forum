@@ -4,4 +4,4 @@
 
 서버가 없이 개발된 정적 웹 페이지입니다.
 
-<iframe width="1268" height="713" src="https://www.youtube.com/embed/hFJZwOfme6w?list=PLuHgQVnccGMA8iwZwrGyNXCGy2LAAsTXk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="https://drive.google.com/file/d/1SJF-2B1kV4DU8bf6iOqBhSNXAWBtNuZ4/view?usp=sharing" />
